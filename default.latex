@@ -144,6 +144,11 @@ $header-includes$
 $endfor$
 
 \begin{document}
+
+$for(include-before)$
+$include-before$
+$endfor$
+
 $if(title)$
 \maketitle
 $endif$
@@ -153,10 +158,6 @@ $abstract$
 \end{abstract}
 $endif$
 
-$for(include-before)$
-$include-before$
-
-$endfor$
 $if(toc)$
 {
 \hypersetup{linkcolor=black}
